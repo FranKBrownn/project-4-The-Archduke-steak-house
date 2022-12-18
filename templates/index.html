@@ -1,14 +1,65 @@
 {% extends "header.html" %}
 {% block header %}
-<div class="row">
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='img/img_5597.webp') }}')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>ARCH STEAK HOUSE</h1>
+          <span class="subheading">steaks live jazz and cocktails everynight</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      <div class="post-preview">
+        <div class="post-preview">
+            <h2 class="post-title">
+              MAIN RESTAURANT 
+            </h2>
+            <h3 class="post-subtitle">
+              Enjoy stunning dishes from a variaty of steaks, chicken, salads,
+              burgers and so much more.
+            </h3>
+            <p></p>
+            <h4 class=>Opening Hours:</h4>
+            
+
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      monday: 12:-22:00
+                  </li>
+                  <li class="nav-item">
+                      tuesday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                      wednesday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                      thursday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                      friday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                      saturday: 12:00-22:30
+                  </li>
+                  <li class="nav-item">
+                      sunday: 12:00-22:00
+                  </li>
+              </ul>
+        </div>
+        <hr>
+        <div class="post-preview">
           <h2 class="post-title">
-            MAIN RESTAURANT 
+            OUR COCKTAIL BAR 
           </h2>
           <h3 class="post-subtitle">
-            Enjoy stunning dishes from a variaty of steaks, chicken, salads,
-            burgers and so much more.
+            Enjoy a range of your favourite classic cocktails as well as our
+            original recipies created by our very own bars team
           </h3>
           <p></p>
           <h4 class=>Opening Hours:</h4>
@@ -19,80 +70,42 @@
                     monday: 12:-22:00
                 </li>
                 <li class="nav-item">
-                    tuesday: 12:00-22:30
+                    tuesday: 12:00-22:45
                 </li>
                 <li class="nav-item">
-                    wednesday: 12:00-22:30
+                    wednesday: 12:00-22:45
                 </li>
                 <li class="nav-item">
-                    thursday: 12:00-22:30
+                    thursday: 12:00-22:45
                 </li>
                 <li class="nav-item">
-                    friday: 12:00-22:30
+                    friday: 12:00-23:15
                 </li>
                 <li class="nav-item">
-                    saturday: 12:00-22:30
+                    saturday: 12:00-23:15
                 </li>
                 <li class="nav-item">
                     sunday: 12:00-22:00
-                </li>
+              </li>
             </ul>
-
-      </div>
-      <hr>
-      <div class="post-preview">
-        <h2 class="post-title">
-          OUR COCKTAIL BAR 
-        </h2>
-        <h3 class="post-subtitle">
-          Enjoy a range of your favourite classic cocktails as well as our
-           original recipies created by our very own bars team
-        </h3>
-        <p></p>
-        <h4 class=>Opening Hours:</h4>
-        
-
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  monday: 12:-22:00
-              </li>
-              <li class="nav-item">
-                  tuesday: 12:00-22:45
-              </li>
-              <li class="nav-item">
-                  wednesday: 12:00-22:45
-              </li>
-              <li class="nav-item">
-                  thursday: 12:00-22:45
-              </li>
-              <li class="nav-item">
-                  friday: 12:00-23:15
-              </li>
-              <li class="nav-item">
-                  saturday: 12:00-23:15
-              </li>
-              <li class="nav-item">
-                  sunday: 12:00-22:00
-              </li>
-          </ul>
-
         </div>
         <hr>
         <div class="post-preview">
             <h2 class="post-title">
-            LIVE JAZZ 
+              LIVE JAZZ 
             </h2>
             <h3 class="post-subtitle">
-            We have live music playing every evening from 19:00 and 
-            a full jazz band friday and saturday evenings from 21:30 till late at night
+              We have live music playing every evening from 19:00 and 
+              a full jazz band friday and saturday evenings from 21:30 till late at night
             </h3>
         </div>
-      <hr>
-      <!-- Pager -->
+        <hr>
+        <!-- Pager -->
       <div class="clearfix">
         <a class="btn btn-primary float-right" href="{{ url_for('booking') }}">BOOK A TABLE NOW</a>
       </div>
     </div>
   </div>
+</div> 
 {% endblock %}    
     
