@@ -14,7 +14,35 @@
     </div>
   </header>
   <div class="container">
-        <a href="{{ url_for('static', filename='menus/arch_steak_house_food.pdf') }}">food</a>
+    <div class="row">
+        <div class="col-4 text-center">
+          <a href="{{ url_for('static', filename='menus/arch_steak_house_food.pdf') }}" target="_blank">
+            <h3>
+              <i class="fa-solid fa-utensils"></i> 
+                FOOD AND WINE 
+              <i class="fa-solid fa-wine-glass"></i>
+            </h3>
+          </a>
+        </div>
+        <div class="col-4 text-center">
+          <a href="{{ url_for('static', filename='menus/pudding.pdf') }}" target="_blank">
+            <h3>
+              <i class="fa-solid fa-ice-cream"></i>
+                DESSERT FOOD AND COCKTAILS 
+              <i class="fa-solid fa-martini-glass"></i>
+            </h3>
+          </a>
+        </div>
+        <div class="col-4 text-center">
+          <a href="{{ url_for('static', filename='menus/bar.pdf') }}" target="_blank">
+            <h3>
+              <i class="fa-solid fa-champagne-glasses"></i> 
+                BAR DRINKS AND SNACKS 
+              <i class="fa-solid fa-whiskey-glass"></i>
+            </h3>
+          </a>
+        </div>
+    </div>
   </div>
 {% endblock %} 
  
