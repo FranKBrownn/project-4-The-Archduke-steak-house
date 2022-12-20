@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import booking
+from django.views import generic
+from .models import Post
 
-from booking.models import booking
 
-def book_a_table(request):
-    
+class PostList(generic.ListView):
+    template_name = 'index.html'
 
 # Create your views here.
